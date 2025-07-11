@@ -1,0 +1,51 @@
+# ==== CONFIGURAÇÕES DO ROBÔ DE SINAIS DE OPÇÕES BINÁRIAS ====
+
+#Lista de símbolos (pares de moedas) a serem analisados
+symbols:
+  - EURUSD
+  - EURJPY
+  - EURGBP
+  - USDJPY
+  - GBPUSD
+  - GBPJPY
+  - AUDCHF
+  - USDCAD
+  - NZDJPY
+  - NZDCAD
+  - EURAUD
+  - EURNZD
+  - GBPAUD
+  - GBPCHF
+  - AUDJPY
+  - EURCAD
+  - GBPCAD
+  - CADCHF
+  - GBPNZD
+  - AUDCAD
+
+#Distância mínima (em pips) entre o preço de abertura da vela e o nível de suporte/resistência
+min_distance_pips: 3  # Exemplo: 3 pips
+
+#Percentual mínimo de retração da vela (exemplo: 0.2 = 20%)
+min_retracement_percent: 0.2
+
+#Horário de operação permitido
+horario_operacao:
+  dias_uteis: true        # Só opera de segunda a sexta
+  inicio: 6               # Hora de início das operações (exemplo: 6h da manhã)
+  fim: 17                 # Hora de término das operações (exemplo: 17h)
+
+#Configuração de envio de sinais para o Telegram
+telegram:
+  bot_token: "7471361525:AAEYh_Mmn4R_hzz9hnMDo5RWAJ6VpiCxaPY"   # Token do Bot
+  chat_id: "-1002235190703"                                     # ID do grupo ou canal
+
+#Tempo de análise em segundos após abertura de cada vela M5
+tempo_analise_segundos: 120  # Exemplo: 120 segundos (2 minutos)
+
+#Parâmetros de Suporte e Resistência
+support_resistance:
+  min_touches: 2                    # Mínimo de toques exigidos em um nível (exemplo: 2 toques)
+  min_distance_between_touches: 5   # Mínimo de velas de distância entre os toques (exemplo: 5 velas)
+  tolerance_pips: 2                 # Tolerância de pips para agrupar toques em uma mesma faixa (exemplo: 2 pips)
+  min_region_separation: 10  # mínimo de velas entre os grupos de toque
