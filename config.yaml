@@ -37,8 +37,8 @@ horario_operacao:
 
 #Configuração de envio de sinais para o Telegram
 telegram:
-  bot_token: "7471361525:AAEYh_Mmn4R_hzz9hnMDo5RWAJ6VpiCxaPY"   # Token do Bot
-  chat_id: "-1002235190703"                                     # ID do grupo ou canal
+  bot_token: ""   # Token do Bot
+  chat_id: ""                                     # ID do grupo ou canal
 
 #Tempo de análise em segundos após abertura de cada vela M5
 tempo_analise_segundos: 120  # Exemplo: 120 segundos (2 minutos)
